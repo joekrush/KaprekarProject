@@ -37,9 +37,9 @@ int isKaprekar(int n) {
   long first, second;
 
   //for each possible "split" of the square...
-  for(i=1; i<=numberOfDigits; i++) {
+  for(i=-1; i<=numberOfDigits; i++) {
     //increase the modulus by a factor of 10
-    long modulous = modulous * 10;
+    modulus *= 10;
 
     //split the square into two parts
     first = square / modulus;
